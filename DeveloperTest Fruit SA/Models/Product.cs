@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace DeveloperTest_Fruit_SA.Models
 {
     public class Product
@@ -28,6 +30,6 @@ namespace DeveloperTest_Fruit_SA.Models
         public string image { get; set; }
         [NotMapped]
         public HttpPostedFileBase imageFile { get; set; }
-        public virtual category Category { get; set; }
+        public virtual Category Category { get; set; }
     }
 }
