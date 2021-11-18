@@ -15,8 +15,11 @@ namespace DeveloperTest_Fruit_SA.Models
         [DisplayName("Category Name")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please enter name")]
+      [Required]
         [DisplayName("Category Code")]
+        [MaxLength(6)]
+        [RegularExpression(@"", ErrorMessage = "Please enter correct code format ")]
+
         public string categoryCode { get; set; }
         [Required]
         public bool isActive { get; set; }

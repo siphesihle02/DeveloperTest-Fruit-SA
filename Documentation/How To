@@ -1,0 +1,9 @@
+
+/*   
+How To...
+1.Please build the project first
+2.Migrations scripts Folder is under MVC project run :Update-Database  command
+3.Please make sure Mvc  is set up as a startUp project
+4. Please change the server name according to you computer... I used localhost/SQLEXPRESS01
+5. Please make the project is running under Master branch
+*/
