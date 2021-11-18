@@ -7,7 +7,7 @@ using DeveloperTest_Fruit_SA.Models;
 
 namespace DeveloperTest_Fruit_SA.Repositories
 {
-   public interface ICatetogory :IDisposable
+   public interface ICategory :IDisposable
     {
         IEnumerable<Category> GetCategory();
         Category GeCategoryByID(int categoryId);
