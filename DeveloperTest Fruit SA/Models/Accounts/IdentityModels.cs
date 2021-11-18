@@ -17,11 +17,11 @@ namespace DeveloperTest_Fruit_SA.Models
             return userIdentity;
         }
     }
-
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
+
         {
         }
 
@@ -29,5 +29,8 @@ namespace DeveloperTest_Fruit_SA.Models
         {
             return new ApplicationDbContext();
         }
+
+
+
     }
 }
