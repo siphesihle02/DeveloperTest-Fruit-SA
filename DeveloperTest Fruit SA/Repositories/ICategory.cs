@@ -10,7 +10,7 @@ namespace DeveloperTest_Fruit_SA.Repositories
    public interface ICategory :IDisposable
     {
         IEnumerable<Category> GetCategory();
-        Category GeCategoryByID(int categoryId);
+        Category GetCategoryByID(int categoryId);
         void InsertCategory(Category category);
         void DeleteCategory(int categoryId);
         void UpdateCategory(Category category);

@@ -32,9 +32,10 @@ namespace DeveloperTest_Fruit_SA.Repositories
             Category category = _context.Categories.Find(categoryID);
             _context.Categories.Remove(category);
         }
-        public void UpdateProduct(Product product)
+        public void UpdateCategory(Category category)
         {
-            _context.Entry(product).State = EntityState.Modified;
+            _context.Entry(category
+                ).State = EntityState.Modified;
         }
         public void Save()
         {
