@@ -17,8 +17,8 @@ namespace DeveloperTest_Fruit_SA.Models
 
       [Required]
         [DisplayName("Category Code")]
-        [MaxLength(6)]
-        [RegularExpression(@"", ErrorMessage = "Please enter correct code format ")]
+  
+        [RegularExpression(@"[A-Z][A-Z][A-Z][0-9][0-9][0-9]" , ErrorMessage = "Please enter correct code format ")]
 
         public string categoryCode { get; set; }
         [Required]
