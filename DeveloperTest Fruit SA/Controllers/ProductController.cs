@@ -78,7 +78,7 @@ namespace DeveloperTest_Fruit_SA.Controllers
 
                         _productRepository.InsertProduct(product);
                     _productRepository.Save();
-                    return RedirectToAction("Index");
+                    return RedirectToAction("ProductList");
                 }
             }
             catch (DataException)
