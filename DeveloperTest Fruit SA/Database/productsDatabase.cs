@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using DeveloperTest_Fruit_SA.Models;
+using DocUpDownLoad;
 
 namespace DeveloperTest_Fruit_SA.Database
 {
@@ -15,5 +16,6 @@ namespace DeveloperTest_Fruit_SA.Database
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<FileUpload> fileUploads { get; set; }
     }
 }

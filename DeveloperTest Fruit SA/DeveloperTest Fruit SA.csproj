@@ -178,15 +178,16 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Database\Db.cs" />
+    <Compile Include="Controllers\UpDownloadController.cs" />
+    <Compile Include="Database\productsDatabase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202111180920431_new table.cs" />
-    <Compile Include="Migrations\202111180920431_new table.Designer.cs">
+    <Compile Include="Database\Migrations\202111180920431_new table.cs" />
+    <Compile Include="Database\Migrations\202111180920431_new table.Designer.cs">
       <DependentUpon>202111180920431_new table.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Database\Migrations\Configuration.cs" />
     <Compile Include="Models\Accounts\AccountViewModels.cs" />
     <Compile Include="Models\Accounts\IdentityModels.cs" />
     <Compile Include="Models\Accounts\ManageViewModels.cs" />
@@ -271,6 +272,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Files\" />
+    <Folder Include="Views\UpDownload\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -286,9 +288,15 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202111180920431_new table.resx">
+    <EmbeddedResource Include="Database\Migrations\202111180920431_new table.resx">
       <DependentUpon>202111180920431_new table.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DocUpDownLoad\DocUpDownLoad.csproj">
+      <Project>{ee09a6b7-cab5-4490-97cf-9201d7c6b017}</Project>
+      <Name>DocUpDownLoad</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
