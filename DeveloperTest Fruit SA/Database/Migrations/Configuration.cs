@@ -9,7 +9,7 @@ namespace DeveloperTest_Fruit_SA.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(DeveloperTest_Fruit_SA.Database.Db context)
